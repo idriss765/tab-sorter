@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Sorter</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .option-group {
+      margin-bottom: 15px;
+    }
+    .option-group label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="option-group">
+    <strong>Sort by:</strong>
+    <label><input type="radio" name="criteria" value="date" checked> Date</label>
+    <label><input type="radio" name="criteria" value="url"> URL</label>
+    <label><input type="radio" name="criteria" value="color"> Icon Color</label>
+  </div>
+
+  <div class="option-group">
+    <strong>Order:</strong>
+    <label><input type="radio" name="order" value="asc" checked> Ascending</label>
+    <label><input type="radio" name="order" value="desc"> Descending</label>
+  </div>
+
+  <button id="sortButton">Sort Tabs</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
